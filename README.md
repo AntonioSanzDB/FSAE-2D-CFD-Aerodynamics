@@ -1,13 +1,13 @@
 2D CFD Aerodynamic Analysis: Selig S1223 FSAE Rear Wing
 
 Author: [Antonio Sanz]  
-**Date:** March 2026  
-**Software:** ANSYS Fluent, ANSYS DesignModeler, ANSYS Meshing  
+Date: March 2026  
+Software: ANSYS Fluent, ANSYS DesignModeler, ANSYS Meshing  
 
-## 📌 Project Objective
+## Project Objective
 The objective of this project is to validate the aerodynamic force generation of a highly-cambered Selig S1223 airfoil, a common profile used in Formula SAE for maximum downforce. The simulation was conducted at a typical FSAE cornering speed of 15 m/s to analyze pressure distribution, flow separation, and the resulting Lift-to-Drag (L/D) ratio.
 
-## ⚙️ Methodology & Setup
+## Methodology & Setup
 The computational domain was constructed to mimic a virtual wind tunnel, ensuring boundary walls were sufficiently far from the airfoil to prevent artificial flow constriction.
 
 * **Airfoil Profile:** Selig S1223
@@ -20,7 +20,7 @@ The computational domain was constructed to mimic a virtual wind tunnel, ensurin
 ### Meshing Strategy
 A quad-dominant mesh was generated. Edge sizing was applied to the airfoil geometry to capture the highly-curved leading and trailing edges. *Note: Due to local hardware constraints for this baseline pipeline validation, a coarse global mesh was utilized. Future iterations would include 10-15 inflation layers to fully capture boundary layer friction.*
 
-![Mesh Setup]([Insert your mesh image name here, e.g., mesh.png])
+[Mesh Setup]([meshFSAE.jpeg])
 
 ---
 
