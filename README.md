@@ -20,7 +20,7 @@ The computational domain was constructed to mimic a virtual wind tunnel, ensurin
 ### Meshing Strategy
 A quad-dominant mesh was generated. Edge sizing was applied to the airfoil geometry to capture the highly-curved leading and trailing edges. *Note: Due to local hardware constraints for this baseline pipeline validation, a coarse global mesh was utilized. Future iterations would include 10-15 inflation layers to fully capture boundary layer friction.*
 
-([meshFSAE.jpeg])
+![Mesh Setup]([meshFSAE.jpeg])
 
 ---
 
