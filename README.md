@@ -10,17 +10,17 @@ The objective of this project is to validate the aerodynamic force generation of
 ## Methodology & Setup
 The computational domain was constructed to mimic a virtual wind tunnel, ensuring boundary walls were sufficiently far from the airfoil to prevent artificial flow constriction.
 
-* **Airfoil Profile:** Selig S1223
-* **Angle of Attack (AoA):** 15° (Inverted to generate downforce)
-* **Solver:** Steady-State, Pressure-Based
-* **Turbulence Model:** $k-\omega \text{ SST}$ (Selected for accurate boundary layer and flow separation prediction)
-* **Inlet Velocity:** 15 m/s (~54 km/h)
-* **Fluid:** Air (Standard Sea Level)
+* Airfoil Profile: Selig S1223
+* Angle of Attack (AoA): 15° (Inverted to generate downforce)
+* Solver: Steady-State, Pressure-Based
+* Turbulence Model: $k-\omega \text{ SST}$ (Selected for accurate boundary layer and flow separation prediction)
+* Inlet Velocity: 15 m/s (~54 km/h)
+* Fluid: Air
 
 ### Meshing Strategy
 A quad-dominant mesh was generated. Edge sizing was applied to the airfoil geometry to capture the highly-curved leading and trailing edges. *Note: Due to local hardware constraints for this baseline pipeline validation, a coarse global mesh was utilized. Future iterations would include 10-15 inflation layers to fully capture boundary layer friction.*
 
-![Mesh Setup]([meshFSAE.jpeg])
+![meshFSAE](https://github.com/user-attachments/assets/c0d58c4b-d9fc-425b-babc-d08fe42d9fad)
 
 ---
 
