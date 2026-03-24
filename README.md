@@ -22,32 +22,33 @@ A quad-dominant mesh was generated. Edge sizing was applied to the airfoil geome
 
 ![meshFSAE](https://github.com/user-attachments/assets/c0d58c4b-d9fc-425b-babc-d08fe42d9fad)
 
----
 
-## 📊 Results & Aerodynamic Data
+## Results & Aerodynamic Data
 
-The simulation ran for 47 iterations before reaching successful convergence (residuals dropped below the 1e-3 threshold). 
+The simulation ran for 600 iterations or untill converges
+### 1. Drag generation
+![dragFSAE](https://github.com/user-attachments/assets/d74bca03-8ba5-4cd5-ac0a-fa5e3d175314)
 
-### 1. Force Coefficients
-The mathematical console output yielded the following coefficients, confirming massive downforce generation typical of an FSAE rear wing architecture:
+### 2. Force Coefficients
+The mathematical output of coefficients, confirmed massive downforce generation expected for a FSAE rear wing architecture:
 
-* **Coefficient of Lift ($C_l$):** -1.497
-* **Coefficient of Drag ($C_d$):** 0.215
-* **Lift-to-Drag Ratio (L/D):** ~6.96
+* Coefficient of Lift ($C_l$): -1.4970951
+* Coefficient of Drag ($C_d$): 0.21550375
+* Lift-to-Drag Ratio (L/D): ~6.95
 
-![Convergence Residuals]([Insert your residuals image name here, e.g., residuals.png])
+![residualgraphFSAE](https://github.com/user-attachments/assets/03213e65-a61a-4b85-9ff1-ae1e96e59dcd)
 
-### 2. Static Pressure Contour
+### 3. Static Pressure Contour
 The pressure contour clearly illustrates a high-pressure stagnation point at the leading edge and a massive high-pressure zone on the upper surface pushing downward. Conversely, the lower surface exhibits a strong low-pressure (suction) zone, validating the $C_l$ output.
 
-![Static Pressure]([Insert your pressure contour image name here, e.g., pressure.png])
+![pressureContourFSAE](https://github.com/user-attachments/assets/288b2980-af59-40fc-9bc4-e15237ee3b53)
 
-### 3. Velocity Magnitude Contour
+### 4. Velocity Magnitude Contour
 The velocity contour demonstrates Bernoulli's principle, with localized flow acceleration under the suction surface of the wing. A visible low-velocity wake is also present trailing from the sharp edge, directly correlating to the calculated drag coefficient.
 
-![Velocity Magnitude]([Insert your velocity contour image name here, e.g., velocity.png])
+![velocitycontourFSAE](https://github.com/user-attachments/assets/022ce105-97ad-4f09-b599-c55c71debf82)
 
 ---
 
-## 🏁 Conclusion
+##  Conclusion
 This 2D analysis successfully validates the ANSYS Fluent CFD pipeline for motorsport applications. The Selig S1223, when inverted at a 15° AoA, operates as a highly efficient downforce generator, yielding a theoretical L/D ratio of nearly 7:1 at standard FSAE cornering speeds.
