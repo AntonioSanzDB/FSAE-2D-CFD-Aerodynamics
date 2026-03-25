@@ -17,7 +17,7 @@ The computational domain was constructed to simmulate a virtual wind tunnel, ens
 * Inlet Velocity: 15 m/s (~54 km/h)
 * Fluid: Air
 
-### Meshing Strategy
+## Meshing Strategy
 A mesh was generated using Adaptive sizing with an element size of 0.005m for precision. Adaptive edge sizing was applied to the airfoil boundaries to ensure the solver accurately captured the surface curvature.
 
 ![meshFSAE](https://github.com/user-attachments/assets/c0d58c4b-d9fc-425b-babc-d08fe42d9fad)
